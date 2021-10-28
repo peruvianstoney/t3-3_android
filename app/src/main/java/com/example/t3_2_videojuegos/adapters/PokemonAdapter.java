@@ -51,8 +51,6 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
                 intent.putExtra("nombre", pokemon.nombre);
                 intent.putExtra("tipo", pokemon.tipo);
                 intent.putExtra("image", pokemon.url_imagen);
-                intent.putExtra("codigo", pokemon.codigo);
-                intent.putExtra("atrapado", pokemon.esta_atrapado);
                 view.getContext().startActivity(intent);
             }
         });
